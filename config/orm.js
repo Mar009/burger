@@ -27,7 +27,7 @@ const orm={
     //updateOne() update cuz devoured status
     updateOne: function(burgerUpdate){
         const query = connection.query("UPDATE burgers SET devoured = true WHERE ID = ?", { id: burgerUpdate}, function(err,res){
-            console.log(res.affectedRows + "Burger updated \n";)
+            console.log(res.affectedRows + "Burger updated \n");
         })
     }
 }
