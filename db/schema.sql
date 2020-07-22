@@ -4,5 +4,5 @@ USE burgers_db;
 CREATE TABLE burgers(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     burger_name VARCHAR(100),
-    devoured BOOLEAN
+    devoured BOOLEAN NOT NULL DEFAULT FALSE
 );
